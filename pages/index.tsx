@@ -1,5 +1,4 @@
 import styles from '../styles/Home.module.scss';
-import btnStyles from '../components/buttons/generatebtn.module.scss';
 import Card from '../components/card/card';
 import Base from '../components/layout/base';
 import GenerateBtn from '../components/buttons/generatebtn';
@@ -9,7 +8,7 @@ import desktopDivider from '../public/images/pattern-divider-desktop.svg';
 import mobileDivider from '../public/images/pattern-divider-mobile.svg';
 
 import { useRouter } from 'next/router';
-import React from 'react';
+import React, { useEffect } from 'react';
 
 interface DividerType {
   img: StaticImageData;
@@ -38,6 +37,9 @@ export default function Home({ id, advice }: SlipType) {
     await router.replace(router.asPath);
     ref.current.classList.remove('rotate');
   };
+  useEffect(() => {
+    if (router && router.query) return;
+  }, [router]);
   return (
     <Base>
       <Card>
@@ -53,7 +55,7 @@ export default function Home({ id, advice }: SlipType) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const response = await fetch('https://api.adviceslip.com/advice');
   const advice: AdviceSlip = await response.json();
   const slip: SlipType = advice.slip;
