@@ -21,6 +21,7 @@ function GenerateBtn({
       ref={ref}
       className={`${styles.generateBtn} ${isDesktop} flex flex-d-row flex-jc-center flex-ai-center`}
       onClick={handleClick}
+      name="Button"
     >
       <Image
         src={die}
