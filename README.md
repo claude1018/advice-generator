@@ -57,7 +57,7 @@ Users should be able to:
 
 ### What I learned
 
-I really had the hardtime on using typescript on React/Next. Though I found some interesting things online wich help me.
+I really had a hardtime on using typescript on React/Next. Though I found some interesting things online wich help me.
 
 ### Continued development
 
