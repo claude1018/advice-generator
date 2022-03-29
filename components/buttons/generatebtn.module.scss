@@ -1,0 +1,22 @@
+@use '../../styles/variables' as var;
+
+.generateBtn {
+  cursor: pointer;
+  height: 4rem;
+  width: 4rem;
+  border: none;
+  background: var.$primary-green;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -2.1875rem;
+  padding: 0.5rem;
+
+  &.desktop:hover {
+    box-shadow: 0 0px 28px var.$primary-green;
+  }
+}
+
+.generateIcon {
+  margin: auto;
+  height: 100px;
+}

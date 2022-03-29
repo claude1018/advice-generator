@@ -1,0 +1,18 @@
+@use '../../styles/variables' as var;
+
+.card {
+  background: var.$card-bg;
+  border-radius: 0.625rem;
+  padding: 1.275rem 1.25rem;
+  padding-bottom: 3.4rem;
+  position: relative;
+  height: max-content;
+}
+
+.cardMobile {
+  width: 21.25rem;
+}
+
+.cardDesktop {
+  width: 33.5625rem;
+}
