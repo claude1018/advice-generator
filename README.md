@@ -42,7 +42,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/advice-generator-app-using-next-js-ts-rJ8mcPlm9)
 - Live Site URL: [Vercel](https://advice-generator-claude.vercel.app/)
 
 ## My process
