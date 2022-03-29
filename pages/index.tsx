@@ -55,7 +55,7 @@ export default function Home({ id, advice }: SlipType) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const response = await fetch('https://api.adviceslip.com/advice');
   const advice: AdviceSlip = await response.json();
   const slip: SlipType = advice.slip;
