@@ -1,0 +1,11 @@
+@use '../../styles/variables' as var;
+
+.attribution {
+  color: #fff;
+  font-size: 0.695rem;
+  padding: 0.425rem 0;
+
+  & a {
+    color: var.$primary-green;
+  }
+}
