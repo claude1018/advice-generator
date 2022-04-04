@@ -44,9 +44,9 @@ export default function Home({ id, advice }: SlipType) {
     <Base>
       <Card>
         <p className={`g-text ${styles.id}`}>Advice #{id}</p>
-        <strong className={`${styles.message} w-text`}>
+        <h1 className={`${styles.message} w-text`}>
           &quot;{advice}&quot;
-        </strong>
+        </h1>
         <Image src={divider.img} alt={divider.alt} width={divider.width} />
         <br />
         <GenerateBtn onClick={getNewAdvice} />
